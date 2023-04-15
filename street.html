@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Boss's sh*t</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+<header>
+    <span><h1>Boss's sh*t</h1></span>
+    <a href="index.html"><img src="image.png" alt="image" id="img"></a>
+    <a href="panier.html"><div class="contrast"><span>Panier</span></div></a>
+    <a href="news.html"><div class="contrast"><span>Nouveautés</span></div></a>
+    <a href="articles.html"><div class="contrast"><span>Articles</span></div></a>
+    <a href="street.html" id="street"><div class="contrast"><span>La street</span></div></a>
+</header>
+
+    <div id="show_message" class="alert alert-warning"></div>
+    <form method="post">
+        <input id="message" class="form-control" placeholder="Ecrivez un message ici" type="text">
+        <button class="btn btn-success" id="send_message" type="submit">Envoyer</button>
+    </form>
+
+<script>
+    let send_message = document.getElementById("send_message");
+
+    let street = document.getElementById("street")
+
+
+    send_message.addEventListener("click", () => {
+        let message = document.getElementById("message").value;
+        document.getElementById("show_message").style.display = "block";
+        document.getElementById("show_message").innerText = message;
+        console.log(message)
+    });
+</script>
+</body>
+</html>
