@@ -161,3 +161,43 @@ header a{
 #show_message{
     display: none;
 }
+
+#co{
+    width: 100%;
+}
+#ma{
+    width: 100%;
+
+}
+
+#all{
+    float: left;
+    margin-left: 40%;
+}
+
+#co_div{
+    margin-bottom: 2%;
+    width: 25%;
+    padding: 2%;
+    text-align: center;
+}
+#ma_div{
+    margin-bottom: 2%;
+    width: 25%;
+    padding: 2%;
+    text-align: center;
+}
+
+#all #ma_div span{
+    color: #fff;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#all #co_div span{
+    color: #fff;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
